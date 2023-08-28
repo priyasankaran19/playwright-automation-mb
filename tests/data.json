@@ -1,0 +1,34 @@
+{
+    "loginPage": {
+        "userData": {
+            "userName": "standard_user",
+            "password": "secret_sauce"
+        },
+        "expectedData": {
+            "title": "PRODUCTS",
+            "url": "https://www.saucedemo.com/inventory.html"
+        },
+        "invalidData": {
+            "userName": "invalid_user",
+            "password": "invalid_password"
+        },
+        "expectedInvalidData": {
+            "title": "Epic sadface: Username and password do not match any user in this service",
+            "url": "https://www.saucedemo.com/"
+        },
+        "locators":{
+            "userName": "username",
+            "password": "password",
+            "loginbutton": "login-button",
+            "errortxt": "error"
+        }
+    },
+    "inventoryPage": {
+        "titleLink": "item_4_title_link",
+        "expectedData": {
+            "title": "Sauce Labs Backpack",
+            "url": "https://www.saucedemo.com/inventory-item.html?id=4"
+        },
+        "backToProducts": "back-to-products"
+    }
+}
