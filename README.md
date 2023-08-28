@@ -1,47 +1,49 @@
-# Web Automation using Playwright
+# Playwright Demo with Page Object Model (POM)
 
-This project is to demonstrate the API automation using Newman and Postman. 
-The project is to automate the API's of the [Restful-api](https://restful-api.dev/) website.
+This project demonstrates how to use Playwright with the Page Object Model (POM) design pattern for automating web application tests. 
+The example includes two main web pages - a login page and a inventory page.
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+
+- [Getting Started](#getting-started)
+- [Running Tests](#running-tests)
+- [Test Reports](#test-reports)
 - [CI/CD](#cicd)
-- [Contributing](#contributing)
-- [License](#license)
 
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
-- [Node.js](https://nodejs.org/en/download/) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [Postman](https://www.postman.com/downloads/) - Postman is a collaboration platform for API development.
-- [Newman](https://www.npmjs.com/package/newman) - Newman is a command-line collection runner for Postman.
+- [Node.js](https://nodejs.org/en/download/) installed
+- [Playwright](https://playwright.dev/docs/intro) installed
+- [Visual Studio Code](https://code.visualstudio.com/download) installed (optional)
 
-## Installation
+### Installing
 
-- Install Node.js
-- Install Postman
-- Install Newman
+1. Clone the repository
+2. Install dependencies
+```
+npm install
+```
 
-## Usage
+## Running Tests
 
-- Clone the project
-- Open the project in VS Code
-- Open the terminal and run the command `npm install`
-- Run the command `npm run test` to run the tests
+To run the tests, execute the following command:
+```
+npm run test
+```
+
+## Test Reports
+
+Test reports are available in playwright-reports folder. The reports are generated using [Playwright Reporter]
 
 ## CI/CD
-This project uses Github Actions for CI/CD. The workflow is defined in the file [ci.yml]
-After every push to the main branch, the workflow is triggered and the tests are run.
 
+This project is integrated with GitHub Actions for CI/CD. 
+The workflow is defined in the [ci.yml](.github/workflows/ci.yml) file. 
+The workflow is triggered on every push to the main branch. The workflow consists of the following steps:
 
-## Contributing
-
-- Fork the repository
-- Make the changes
-- Create a pull request
-
-## License
-This project is under MIT License.
+1. Checkout the code
+2. Install dependencies
+3. Run tests
